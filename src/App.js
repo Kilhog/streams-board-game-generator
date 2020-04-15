@@ -7,7 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import _ from "lodash";
 
 const getNumbersDraw = () => {
-  let allAvailable = [..._.range(1, 31), ..._.range(11, 20)];
+  let allAvailable = [..._.range(1, 31), ..._.range(11, 20), '⭐️'];
   return _.take(_.shuffle(allAvailable), 20);
 };
 
